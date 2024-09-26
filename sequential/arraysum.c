@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 10000
+#define SIZE 1000000
 
 int sumArray(int arr[], int size)
 {

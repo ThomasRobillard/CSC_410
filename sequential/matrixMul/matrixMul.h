@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-#define N 10 // Size of the matrices
+#include <stdlib.h>
+#define N 1000 // Size of the matrices
 
 
 void displayMatrix(int matrix[N][N]) {
