@@ -1,7 +1,7 @@
 #include "nqueens.h"
 
 int main() {
-    int n = 8;
+    int n = 15;
     int* board = (int*)malloc(n * sizeof(int));
     if (board == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
