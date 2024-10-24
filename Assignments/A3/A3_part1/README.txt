@@ -13,5 +13,5 @@ matrixT.c // multiplies two matrices of varying size N, and having a defined # o
 matrixT.h // header file containing helper funcgtions for matrixT.c
 
 To compile:
-gcc sum_T.c -o sum_T
-gcc matrixT.c -o matrixT
+gcc sum_T.c -o sum_T -lpthread
+gcc matrixT.c -o matrixT -lpthread
