@@ -32,15 +32,15 @@ void solveNQueensUtil(int board[], int col, int n)
 {
     if (col >= n)
     {
-        // // omp critical section for safe printing :)
-        // #pragma omp critical
-        // {
-        //     for (int i = 0; i < n; i++)
-        //     {
-        //         printf("%d ", board[i]);
-        //     }
-        //     printf("\n");
-        // }
+        // omp critical section for safe printing :)
+        #pragma omp critical
+        {
+            for (int i = 0; i < n; i++)
+            {
+                printf("%d ", board[i]);
+            }
+            printf("\n");
+        }
         return;
     }
 

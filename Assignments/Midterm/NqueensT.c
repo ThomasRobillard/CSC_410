@@ -34,13 +34,13 @@ void solveNQueensUtil(int board[], int col, int n)
     if (col >= n)
     {
         // mutex lock for safe printing :)
-        // pthread_mutex_lock(&print_lock);
-        // for (int i = 0; i < n; i++)
-        // {
-        //     printf("%d ", board[i]);
-        // }
-        // printf("\n");
-        // pthread_mutex_unlock(&print_lock);
+        pthread_mutex_lock(&print_lock);
+        for (int i = 0; i < n; i++)
+        {
+            printf("%d ", board[i]);
+        }
+        printf("\n");
+        pthread_mutex_unlock(&print_lock);
         return;
     }
 
