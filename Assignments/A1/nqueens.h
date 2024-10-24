@@ -20,11 +20,11 @@ void solveNQueensUtil(int board[], int col, int n)
     // Base case
     if (col >= n)
     {
-        // for (int i = 0; i < n; i++)
-        //     {
-        //         printf("%d ", board[i]);
-        //     }
-        //     printf("\n");
+        for (int i = 0; i < n; i++)
+            {
+                printf("%d ", board[i]);
+            }
+            printf("\n");
         return;
     }
     // Recursive case
