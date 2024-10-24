@@ -1,0 +1,6 @@
+.vscode
+*.odt
+*.docx
+*.pdf
+class_code/
+class_docs/
