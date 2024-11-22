@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <mpi.h>
 
 #define N 1000000000 // intervals
 
@@ -17,7 +18,19 @@ double trapezoidalRule() {
 }
 
 int main() {
+
+    // get start time
+    double start_time = MPI_Wtime();
+
     double pi = trapezoidalRule();
     printf("Estimated value of π: %f\n", pi);
+
+    // get end time
+    double end_time = MPI_Wtime();
+
+    // calculate and print elapsed time
+    double elapsed_time = end_time - start_time;
+    printf("Elapsed time: %f seconds\n", elapsed_time);
+
     return 0;
 }
